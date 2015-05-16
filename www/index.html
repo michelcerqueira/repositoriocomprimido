@@ -1,10 +1,13 @@
-<!DOCTYPE HTML><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
-<meta name="apple-mobile-web-app-capable" content="yes"/>
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assembléia de Deus Ministério Belém</title>
+	<link rel="stylesheet" href="css/ab.min.css" />
+	<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.js"></script>
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/splash/splash-icon-big.png">
 <link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" 	media="screen and (max-device-width: 320px)" />  
 <link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
@@ -16,243 +19,371 @@
 <link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
 <link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
 
-<title>Assembléia de Deus Belem</title>
+	<style>
+		.landing-page {
+		  background-image: url(images/bg.png);
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  display: block;
+		  position: relative;
+		}
+		@media (min-width: 768px){
+			.landing-logo {
+			  /* width: 105px; */
+			  width: 340px;
+			  margin-left: auto;
+			  margin-right: auto;
+			  /* margin-top: 40px; */
+			  margin-top: 110px;
+			  /* width: 105px; */
+			  width: 240px;
+			  margin-top: 150px;
+			}
+		}	
+		@media (min-width: 280px) and (max-width:500px){	
+			.landing-logo {
+			  /* width: 105px; */
+			  width: 55%;
+			  margin-left: auto;
+			  margin-right: auto;
+			  /* margin-top: 40px; */
+			  margin-top: 80px;
+			  display: block;
+			}
+		}
+		.landing-logo {
+		 
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			margin-top: 15px;
+		     
+			  color: #fff;
+			 
+		}
+		
+		h1 {
+				   
+			display: block;
+		  margin: 0 auto;
+		  font-size: 9px;
+		  font-weight: bold;
+		  margin-top: 20px;
+		}
+		.landing-wrapper{
+			position: relative;
+			z-index: 11;
+			  display: block;
+			  position: relative;
+			  overflow: hidden;
+		
+		}
+		.ui-select {
+		  margin-bottom: -1.9999em;
+		  margin-right: 10px;
+		  float: right;
+		  top: -6px;
+		  height: 67px;
+		}
+		.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+		  background-color: #FFFFFF;
+		  border-color: #FFFFFF;
+		  color: #333333;
+		  text-shadow: 0 1px 0 #eeeeee;
+		  font-weight: bold;
+		}
+		.share-button-regular {
+  height: 45px;
+  line-height: 45px;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 250ms ease;
+}
+.facebook-color {
+ 
+  background-color: #3b5998 !important;
+  color: #FFFFFF !important;
+   height: 74px;
+  float: left;
+  position: relative;
+width: 22.8%;
+
+}
+.share-button-regular i {
+  padding-right: 20px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+.fa-facebook-f:before, .fa-facebook:before {
+  content: "\f09a";
+}
+.facebook-color{
+	  margin-top: 0px;
+}
+.twitter-color {
+  background-color: #4099ff !important;
+  color: #FFFFFF !important;
+    height: 74px;
+  float: left;
+  position: relative;
+  width: 22.8%;
+}
 
 
-<link href="styles/style.css"     		 rel="stylesheet" type="text/css">
-<link href="styles/framework.css" 		 rel="stylesheet" type="text/css">
-<link href="styles/owl.theme.css" 		 rel="stylesheet" type="text/css">
-<link href="styles/swipebox.css"		 rel="stylesheet" type="text/css">
-<link href="styles/font-awesome.css"	 rel="stylesheet" type="text/css">
-<link href="styles/animate.css"			 rel="stylesheet" type="text/css">
 
-<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-<script type="text/javascript" src="scripts/jquery.js"></script>
-<script type="text/javascript" src="scripts/jqueryui.js"></script>
-<script type="text/javascript" src="scripts/framework.plugins.js"></script>
-<script type="text/javascript" src="scripts/custom.js"></script>
-<style>
-	#botoes img{
-		display:none;
+
+
+.contato-color {
+  background-color: #27ae60 !important;
+  
+  color: #FFFFFF !important;
+    height: 74px;
+  float: left;
+  position: relative;
+ width: 22.8%;
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+.share-button-regular:hover {
+  opacity: 0.8;
+  transition: all 250ms ease;
+}
+.ui-mobile, .ui-mobile body {
+  height: auto;
+}
+.ui-mobile body {
+  height: auto;
+}
+.all-elements {
+  position: absolute;
+  overflow-x: hidden!important;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+	.rodape{	background-color: #000;
+		min-height: 75px;
 	}
-	.active{
-		display:block !important;
+	@media (min-width: 250px) and (max-width:321px){
+	.twitter-color,.contato-color,.facebook-color {	  width: 20.8%;}
+	}
+	@media (min-width: 350px) and (max-width:374px){
+	.twitter-color,.contato-color,.facebook-color {	  width: 22.2%;}
+	}
+	@media (min-width: 750px) and (max-width:1024px){
+	.twitter-color,.contato-color,.facebook-color {	  width: 29.4%;}
 	}
 	
+@media (width:375px){
+.twitter-color, .contato-color, .facebook-color {width: 22.6%;}
+}
+#som {
+   width: 93%;
+  position: RELATIVE;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:50px;
+}
+	.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+  background-color: #000000;
+  border-color: #FFFFFF;
+  color: #333333;
+  text-shadow: 0 1px 0 #0F0E0E;
+  font-weight: bold;
+  border: 0px solid;
+}
+.rodape h3 {
+  text-align: center;
+}
+.fieldcontain{
+	width:90%;
+}
 
-</style>
-     <script type="text/javascript" charset="utf-8">
-	jQuery(document).ready(function(){	
-		jQuery("#botoes #pause").addClass("active");
-	//	jQuery(".botaoplay #botoes").addClass( "active" );
-		
-		som.play();
-		som.volume = 0.1;
-		jQuery("#play").click(function(){
-			
-			som.play();
-			jQuery(this).removeClass("active");
-			jQuery("#pause").addClass("active");
-		});
-		
-		jQuery("#pause").click(function(){
-			som.pause();
-			jQuery(this).removeClass("active");
-			jQuery("#play").addClass("active");
-		})
-	});	
-		
-		
-      
-        </script>
+ #contato .landing-logo{  z-index: -1;
+  position: fixed;
+  margin: 0 auto;
+  left: 25%;}
+  #contato form{ HEIGHT: 345PX;color:#fff;}
+  
+  #textarea-1{height:90px !important;}
+  #contato .ui-field-contain:last-child {
+  border-bottom-width: 0;
+  margin-top: -18px;
+}
+
+.ui-header .ui-title, .ui-footer .ui-title {
+  font-size: 1em;
+  min-height: 1.1em;
+  text-align: center;
+  display: block;
+  margin: 0 -13%;
+  padding: .7em 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  outline: 0!important;
+  width: 100%;
+  color: #fff;
+}
+	</style>
+	<script>
+	
+    $(document).ready(function(){
+	
+		$('.landing-page').css({
+             height: screen_height  - 151,
+            width: screen_width  - 10
+        });  
+	})
+	//var screen_width = 0;
+    //var screen_height = 0;
+	function resize_coverpage(){
+        screen_width = $(window).width();
+        screen_height = $(window).height();
+
+         $('.coverpage-image').css({
+			  height: screen_height  - 151, 
+            width: screen_width  - 10
+        });          
+        $('.landing-page').css({
+            height: screen_height  - 151, 
+            width: screen_width 
+        });  
+        
+         
+    };
+    resize_coverpage();
+    $(window).resize(resize_coverpage);
+    var myselect = $("select#foo");
+myselect[0].selectedIndex = 3;
+myselect.selectmenu("refresh");
+	
+	</script>
 </head>
-<body> 
-
-<div id="preloader">
-	<div id="status">
-    	<p class="center-text">
-			Carregando...
-            <em>Assembléia de Deus Belém!</em>
-        </p>
-    </div>
-</div>
-    
-<div class="header">
-    <a href="#" class="main-logo"></a>
-    <div class="header-controls">
-         <a href="#" class="open-menu"><i class="fa fa-navicon"></i></a>
-    </div>
-</div>
-       
-<div class="all-elements">
-    <div class="snap-drawers">
-        <!-- Left Sidebar -->
-        <div class="snap-drawer snap-drawer-left">
-            
-            <div class="sidebar-header">
-                <a href="#"><i class="fa fa-phone"></i></a>
-                <a href=""><i class="fa fa-contact"></i></a>
-                <a href="https://www.facebook.com/Adbelemnoradio"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/adbelemnoradio"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-envelope"></i></a>                
-            </div>
-            
-           
-            
-            <div class="sidebar-divider">
-                Navegação
-            </div>
-            
-            <ul class="sidebar-navigation">
-                             
-                <li><a href="page-video.html"><i class="fa fa-youtube-play"></i>Videos<i class="fa fa-circle"></i></a></li>
-                <li><a href="http://www.ieadsp.com.br/"><i class="fa fa-pencil"></i>Site<i class="fa fa-circle"></i></a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope"></i>Contato<i class="fa fa-circle"></i></a></li>
-            </ul>                        
-            <div class="sidebar-divider">
-                Copyright 2015.Assembléia de Deus Belém.
-            </div>
-        </div>
-        <div class="snap-drawer snap-drawer-right">
-            <div class="sidebar-header">
-                <a href="#"><i class="fa fa-phone"></i></a>
-                <a href="#"><i class="fa fa-comment"></i></a>
-                <a href="https://www.facebook.com/Adbelemnoradio"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/adbelemnoradio "><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-times"></i></a>                
-            </div>
-        
-
-   
-            <div class="sidebar-logo"></div>
-            
-            <div class="sidebar-divider">
-                Get in touch
-            </div>     
-            
-            <ul class="sidebar-navigation">
-                <li><a href="#"><i class="fa fa-envelope-o"></i>Mail Us<i class="fa fa-caret-right"></i></a></li>
-                <li><a href="#"><i class="fa fa-phone"></i>Call Us<i class="fa fa-caret-right"></i></a></li>
-                <li><a href="#"><i class="fa fa-comment-o"></i>Text Us<i class="fa fa-caret-right"></i></a></li>
-            </ul>
-            
-            <div class="sidebar-divider">
-                get social
-            </div>
-            
-            <ul class="sidebar-navigation">
-                <li><a href="#"><i class="fa fa-facebook"></i>Facebook<i class="fa fa-caret-right"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i>Twitter<i class="fa fa-caret-right"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i>Google Plus<i class="fa fa-caret-right"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube-play"></i>YouTube<i class="fa fa-caret-right"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i>LinkedIn<i class="fa fa-caret-right"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble"></i>Dribbble<i class="fa fa-caret-right"></i></a></li>
-                <li><a href="#"><i class="fa fa-pinterest"></i>Pinterest<i class="fa fa-caret-right"></i></a></li>
-            </ul>
-            
-            <div class="sidebar-divider">
-                updates and news
-            </div>
-            
-            <a href="#" class="sidebar-update red-update">
-                <i class="fa fa-times"></i>
-                <strong>Warning</strong>
-                <em>Released a right sidebar item</em>
-            </a>            
-            
-            <a href="#" class="sidebar-update green-update">
-                <i class="fa fa-check"></i>
-                <strong>All great!</strong>
-                <em>Released a right sidebar item</em>
-            </a>
-            
-            <a href="#" class="sidebar-update blue-update">
-                <i class="fa fa-info"></i>
-                <strong>Information</strong>
-                <em>Released a right sidebar item</em>
-            </a>            
-                        
-            <a href="#" class="sidebar-update yellow-update full-bottom">
-                <i class="fa fa-warning"></i>
-                <strong>Atention</strong>
-                <em>Released a right sidebar item</em>
-            </a>
-            <div class="sidebar-divider">
-                Copyright 2015. All rights reserved.
-            </div>
-        </div>
-    </div>
-    
-    <!-- Page Content-->
-    <div id="content" class="snap-content">
-
-        <!-- Page Content-->
-
-			<div class="landing-page">
-    <div class="landing-wrapper">
-       
-            <img class="landing-logo" src="images/logo.png"  alt="img">
-          <!--  <audio controls>
-				 <source src="http://a3.fabricahost.com.br:1935/adorefm/default.stream/playlist.m3u8?wowzasessionid=1151255209" type="audio/mpeg">
-			</audio>-->
-		
-			
-			<em class="landing-logo-sub"> Igreja Assembléia de Deus Ministério Belém</em>
-       
-
-        <div class="landing-navigation">
-			<!-- <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <div class="clear"></div>
-          <!--  <a href="index.html"><i class="fa fa-home"></i>Homepage</a>
-            <a href="features-type.html"><i class="fa fa-pencil"></i>Type</a>
-            <a href="features-jquery.html"><i class="fa fa-bolt"></i>jQuery</a>
-
-            <a href="gallery-adaptive.html"><i class="fa fa-camera"></i>Gallery</a>
-            <a href="portfolio-adaptive.html"><i class="fa fa-picture-o"></i>Portfolio</a>
-            <a href="contact.html"><i class="fa fa-envelope"></i>Contact</a> -->
-
-            <div class="clear"></div>
-        </div>
-        
-		
+<body class="ui-mobile">
+	
+	<div data-role="page" class="all-elements" id="pag1">
+		<div data-role="header"style="overflow:hidden;" >
+			 <h1>Igreja Assembléia de Deus</h1>		
 		</div>
-        
-                    
-		<audio id="som">
+		<div id="home" role="main" class="ui-content landing-page">
+			<div class="landing-wrapper">			
+				<img class="landing-logo" src="images/logo.png" alt="img">
+				<audio id="som" controls autoplay>
 			<!--<source src="http://198.27.64.63:8344/stream">-->
-			<source src="http://198.27.64.63:8364/stream">
+			<source src="http://198.27.64.63:8364/stream" >
 			Your browser does not support the audio element.
 		</audio>
-            
-        <!-- Page Footer-->
-        <div class="footer" style="background-color:#fff;">
-		
-			<div class="botoes">
-				
-			
-				<a href="https://www.facebook.com/Adbelemnoradio" class="facebook-color share-button-regular"><i class="fa fa-facebook"></i>Share to Facebook</a>
- 
-				<div class="one-half">
-					<a href="https://twitter.com/adbelemnoradio" class="twitter-color share-button-regular no-bottom"><i class="fa fa-twitter"></i>Twitter</a>
-				</div>
-				<div id="botoes">
-					<img id="play" src="images/play.png">
-					<img id="pause" src="images/pause.png">
+			</div>		
 		</div>
+		<div dat-role="footer" class="rodape">	
+			<a href="https://www.facebook.com/Adbelemnoradio" rel="external" data-ajax="false" class="facebook-color share-button-regular"></i><h3>Facebook</h3></a>
+			<a href="https://twitter.com/adbelemnoradio" rel="external" data-ajax="false" class="twitter-color share-button-regular no-bottom"></i><h3>Twitter</h3></a>
+			<a href="#contato" rel="external" data-ajax="false" class="contato-color share-button-regular no-bottom"></i><h3>Contato</h3></a>
+			
+		</div>
+	</div>	
+	<!-- PAGE CONTATO -->
+	<div data-role="page" id="contato">		
+		<div data-role="header"style="overflow:hidden;" >
+				 <h1>Igreja Assembléia de Deus</h1>
+        <a href="#" data-rel="back" class="ui-btn-right ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
+   
+		
+		</div>
+		
+		<form action="form.php" method="post"> 
+			
+			<div id="home" role="main" class="ui-content landing-page">
+				<img class="landing-logo" src="images/logo.png" alt="img">
 				
+				<div data-role="fieldcontain"  class="fieldcontain">		
+					<div data-role="fieldcontain">
+						<label for="basic">Nome:</label>
+						<input type="text" name="name" id="basic" data-mini="true"required="required" name="text" pattern="[a-z\s]+$" />
+						<br/>
+						<label for="name">Email:</label>
+						<input type="email" data-clear-btn="false" name="email" id="email" value="" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+						
+						
+						<br/>
+						<label for="name">Mensagem:</label>
+						<textarea type="text" name="textarea-1" id="textarea-1" value="" required="required" /></textarea>
+						<BR/>
+						<button class="ui-btn ui-btn-inline">Enviar</button>
 					
+					</div>
+				</div>	
 			</div>
-          
-     <!-- <p class="center-text">Copyright 2015. All rights reserved.</p>-->
-       </div>    
-        
-    </div>
-    
-    
-    
-
-
+		
+		</form>
+		<div dat-role="footer" class="rodape">	
+			<a href="https://www.facebook.com/Adbelemnoradio" rel="external" data-ajax="false" class="facebook-color share-button-regular"></i><h3>Facebook</h3></a>
+			<a href="https://twitter.com/adbelemnoradio" rel="external" data-ajax="false" class="twitter-color share-button-regular no-bottom"></i><h3>Twitter</h3></a>
+			<a href="#contato" rel="external" data-ajax="false" class="contato-color share-button-regular no-bottom"></i><h3>Contato</h3></a>
+			
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div data-role="page" id="quesomos">		
+		<div data-role="header"style="overflow:hidden;" >
+			<select name="select-choice-11" id="select-choice-11" data-theme="a" data-icon="gear" data-inline="true" data-native-menu="false" tabindex="-1">
+				
+				<option value="delete"> <a href="#pag1" rel="external" data-ajax="false" class="contato-color share-button-regular no-bottom"></i><h3>Home</h3></a></option>
+				<option value="edit">Quem Somos</option>
+			</select>			
+		</div>
+		
+		<form action="form.php" method="post"> 
+			
+			<div id="home" role="main" class="ui-content landing-page">
+				<img class="landing-logo" src="images/logo.png" alt="img">
+				
+				<div data-role="fieldcontain"  class="fieldcontain">		
+					<div data-role="fieldcontain">
+						<label for="basic">Nome:</label>
+						<input type="text" name="name" id="basic" data-mini="true"required="required" name="text" pattern="[a-z\s]+$" />
+						<br/>
+						<label for="name">Email:</label>
+						<input type="email" data-clear-btn="false" name="email" id="email" value="" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+						
+						
+						<br/>
+						<label for="name">Mensagem:</label>
+						<textarea type="text" name="textarea-1" id="textarea-1" value="" required="required" /></textarea>
+						<BR/>
+						<button class="ui-btn ui-btn-inline">Enviar</button>
+					
+					</div>
+				</div>	
+			</div>
+		
+		</form>
+		<div dat-role="footer" class="rodape">	
+			<a href="https://www.facebook.com/Adbelemnoradio" rel="external" data-ajax="false" class="facebook-color share-button-regular"></i><h3>Facebook</h3></a>
+			<a href="https://twitter.com/adbelemnoradio" rel="external" data-ajax="false" class="twitter-color share-button-regular no-bottom"></i><h3>Twitter</h3></a>
+			<a href="#pag1" rel="external" data-ajax="false" class="contato-color share-button-regular no-bottom"></i><h3>Contato</h3></a>
+			
+		</div>
+	</div>
+	
+	
+		
+	
 </body>
-
+	

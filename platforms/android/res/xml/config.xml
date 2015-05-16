@@ -21,10 +21,10 @@
     <allow-intent href="market:*" />
     <name>adbrasplay</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+       Aplicativo rádio Ad Ministério Belém
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+       Michel Cerqueira
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
