@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="css/ab.min.css" />
 	<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
 	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+<!--<script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.mobile-1.4.js"></script>
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
@@ -18,372 +19,287 @@
 <link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
 <link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
 <link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
-
-	<style>
-		.landing-page {
-		  background-image: url(images/bg.png);
-		  background-repeat: no-repeat;
-		  background-size: cover;
-		  display: block;
-		  position: relative;
-		}
-		@media (min-width: 768px){
-			.landing-logo {
-			  /* width: 105px; */
-			  width: 340px;
-			  margin-left: auto;
-			  margin-right: auto;
-			  /* margin-top: 40px; */
-			  margin-top: 110px;
-			  /* width: 105px; */
-			  width: 240px;
-			  margin-top: 150px;
-			}
-		}	
-		@media (min-width: 280px) and (max-width:500px){	
-			.landing-logo {
-			  /* width: 105px; */
-			  width: 55%;
-			  margin-left: auto;
-			  margin-right: auto;
-			  /* margin-top: 40px; */
-			  margin-top: 80px;
-			  display: block;
-			}
-		}
-		.landing-logo {
-		 
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
-			margin-top: 15px;
-		     
-			  color: #fff;
-			 
-		}
-		
-		h1 {
-				   
-			display: block;
+<style>
+	
+	
+	.landing-wrapper{
+		border: 0px solid #000;
+		width: 100%;
+		position:relative;
+		   height: 80%;
+		  
+	}
+	.landing-logo{
 		  margin: 0 auto;
-		  font-size: 9px;
-		  font-weight: bold;
-		  margin-top: 20px;
-		}
-		.landing-wrapper{
-			position: relative;
-			z-index: 11;
-			  display: block;
-			  position: relative;
-			  overflow: hidden;
-		
-		}
-		.ui-select {
-		  margin-bottom: -1.9999em;
-		  margin-right: 10px;
-		  float: right;
-		  top: -6px;
-		  height: 67px;
-		}
-		.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
-		  background-color: #FFFFFF;
-		  border-color: #FFFFFF;
-		  color: #333333;
-		  text-shadow: 0 1px 0 #eeeeee;
-		  font-weight: bold;
-		}
-		.share-button-regular {
-  height: 45px;
-  line-height: 45px;
-  font-size: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
-  transition: all 250ms ease;
-}
-.facebook-color {
- 
-  background-color: #3b5998 !important;
-  color: #FFFFFF !important;
-   height: 74px;
-  float: left;
-  position: relative;
-width: 22.8%;
-
-}
-.share-button-regular i {
-  padding-right: 20px;
-}
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
-}
-.fa-facebook-f:before, .fa-facebook:before {
-  content: "\f09a";
-}
-.facebook-color{
-	  margin-top: 0px;
-}
-.twitter-color {
-  background-color: #4099ff !important;
-  color: #FFFFFF !important;
-    height: 74px;
-  float: left;
-  position: relative;
-  width: 22.8%;
-}
-
-
-
-
-
-.contato-color {
-  background-color: #27ae60 !important;
-  
-  color: #FFFFFF !important;
-    height: 74px;
-  float: left;
-  position: relative;
- width: 22.8%;
-}
-
-.fa-twitter:before {
-  content: "\f099";
-}
-.share-button-regular:hover {
-  opacity: 0.8;
-  transition: all 250ms ease;
-}
-.ui-mobile, .ui-mobile body {
-  height: auto;
-}
-.ui-mobile body {
-  height: auto;
-}
-.all-elements {
-  position: absolute;
-  overflow-x: hidden!important;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  max-height: 100%;
-}
-	.rodape{	background-color: #000;
-		min-height: 75px;
-	}
-	@media (min-width: 250px) and (max-width:321px){
-	.twitter-color,.contato-color,.facebook-color {	  width: 20.8%;}
-	}
-	@media (min-width: 350px) and (max-width:374px){
-	.twitter-color,.contato-color,.facebook-color {	  width: 22.2%;}
-	}
-	@media (min-width: 750px) and (max-width:1024px){
-	.twitter-color,.contato-color,.facebook-color {	  width: 29.4%;}
-	}
+		  position: relative;
+		  margin-left: auto;
+		  margin-right: auto;
+		  display: -webkit-box;
+		  width:78%;
+		  
 	
-@media (width:375px){
-.twitter-color, .contato-color, .facebook-color {width: 22.6%;}
-}
-#som {
-   width: 93%;
-  position: RELATIVE;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:50px;
-}
-	.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
-  background-color: #000000;
-  border-color: #FFFFFF;
-  color: #333333;
-  text-shadow: 0 1px 0 #0F0E0E;
-  font-weight: bold;
-  border: 0px solid;
-}
-.rodape h3 {
-  text-align: center;
-}
-.fieldcontain{
-	width:90%;
-}
+	}
+	.ui-mobile{
+		 
+		  width: 100%;
+		  height: auto;
+		  /* border: 10px solid #000; */
+		  position: relative;	
+	}
+	#pag1,#contato {
+		background-image: url(images/bg.png);
+	}
+	#slider-0{
+		display:none;
+	}
+	#contato .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+		background-color: transparent;
+		border-color: #dddddd;
+		color: #333333;
+		text-shadow: 0 1px 0 #eeeeee;
+		font-weight: bold;
+	}
 
- #contato .landing-logo{  z-index: -1;
-  position: fixed;
-  margin: 0 auto;
-  left: 25%;}
-  #contato form{ HEIGHT: 345PX;color:#fff;}
-  
-  #textarea-1{height:90px !important;}
-  #contato .ui-field-contain:last-child {
-  border-bottom-width: 0;
-  margin-top: -18px;
-}
-
-.ui-header .ui-title, .ui-footer .ui-title {
-  font-size: 1em;
-  min-height: 1.1em;
-  text-align: center;
-  display: block;
-  margin: 0 -13%;
-  padding: .7em 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  outline: 0!important;
-  width: 100%;
-  color: #fff;
-}
-	</style>
-	<script>
+	.footer{
+	  background-color: transparent !important;
+	  border-color: #dddddd;
+	  color: #333333;
+	  text-shadow: 0 1px 0 #eeeeee;
+	  font-weight: bold;
+	}
+	#contato .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+	  background-color: transparent;
+	  border-color: transparent;
+	  color: #333333;
+	  text-shadow: 0 0px 0 #eeeeee;
+	  font-weight: bold;
+	}
+	.ui-header, .ui-footer {
+	  border-width: 0px 0;
+	  border-style: solid;
+	  position: relative;
+	}
+	.paginamenu{
+		  background-color: #000000;
+		  border-color: #dddddd;
+		  color: #FFFFFF;
+		  text-shadow: 0 0px 0 #f3f3f3;
+		  opacity: 0.7;
+		      
+		}
 	
-    $(document).ready(function(){
 	
-		$('.landing-page').css({
-             height: screen_height  - 151,
-            width: screen_width  - 10
-        });  
-	})
-	//var screen_width = 0;
-    //var screen_height = 0;
-	function resize_coverpage(){
-        screen_width = $(window).width();
-        screen_height = $(window).height();
+	@media screen and (orientation: landscape)
+.ui-mobile .ui-page {
+  min-height: 100% !important;
+}
+}	
+</style>
+<script>
+	 function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
 
-         $('.coverpage-image').css({
-			  height: screen_height  - 151, 
-            width: screen_width  - 10
-        });          
-        $('.landing-page').css({
-            height: screen_height  - 151, 
-            width: screen_width 
-        });  
-        
-         
-    };
-    resize_coverpage();
-    $(window).resize(resize_coverpage);
-    var myselect = $("select#foo");
-myselect[0].selectedIndex = 3;
-myselect.selectmenu("refresh");
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("volumeupbutton", onVolumeUpKeyDown, false);
+    }
+	 
+    // Handle the volume up button
+    //
+    function onVolumeUpKeyDown() {
+		alert();
+    }
+			
+
+function loadURL(url){
+    navigator.app.loadUrl(url, { openExternal:true });
+    return false;
+} 
+    
 	
 	</script>
+	
+	
 </head>
-<body class="ui-mobile">
+<body class="ui-mobile landing-page" onload="onLoad()">
 	
 	<div data-role="page" class="all-elements" id="pag1">
-		<div data-role="header"style="overflow:hidden;" >
+		<div data-role="header"style="background-color: #e9e9e9;" >
 			 <h1>Igreja Assembléia de Deus</h1>		
+		</div>
+		<div data-role="footer" style="text-align:center;" class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#" data-theme="a">NO AR</a></li>
+				<li><a href="#social" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
+				
+			  </ul>
+			</div>   
 		</div>
 		<div id="home" role="main" class="ui-content landing-page">
 			<div class="landing-wrapper">			
 				<img class="landing-logo" src="images/logo.png" alt="img">
 				<audio id="som" controls autoplay>
-			<!--<source src="http://198.27.64.63:8344/stream">-->
-			<source src="http://198.27.64.63:8364/stream" >
-			Your browser does not support the audio element.
-		</audio>
+					<!--<source src="http://198.27.64.63:8344/stream">-->
+					<source src="http://198.27.64.63:8364/stream" >
+					Your browser does not support the audio element.
+				</audio>
+				<!-- <label for="slider-0">Input slider:</label>
+					<input type="range" name="slider" id="slider-0" value="25" min="0" max="100"  />-->
 			</div>		
 		</div>
-		<div dat-role="footer" class="rodape">	
-			<a href="https://www.facebook.com/Adbelemnoradio" rel="external" data-ajax="false" class="facebook-color share-button-regular"></i><h3>Facebook</h3></a>
-			<a href="https://twitter.com/adbelemnoradio" rel="external" data-ajax="false" class="twitter-color share-button-regular no-bottom"></i><h3>Twitter</h3></a>
-			<a href="#contato" rel="external" data-ajax="false" class="contato-color share-button-regular no-bottom"></i><h3>Contato</h3></a>
+		
+		
 			
-		</div>
+			
 	</div>	
 	<!-- PAGE CONTATO -->
-	<div data-role="page" id="contato">		
-		<div data-role="header"style="overflow:hidden;" >
-				 <h1>Igreja Assembléia de Deus</h1>
-        <a href="#" data-rel="back" class="ui-btn-right ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button" role="button">Back</a>
-   
-		
+	<div data-role="page" class="all-elements" id="contato">
+		<div data-role="header"style="background-color: #e9e9e9;" class="topo" >
+			 <h1>Igreja Assembléia de Deus</h1>		
 		</div>
-		
-		<form action="form.php" method="post"> 
-			
-			<div id="home" role="main" class="ui-content landing-page">
-				<img class="landing-logo" src="images/logo.png" alt="img">
+		<div data-role="footer" style="overflow:hidden;"  class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#pag1" data-theme="a">NO AR</a></li>
+				<li><a href="#social" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
 				
-				<div data-role="fieldcontain"  class="fieldcontain">		
-					<div data-role="fieldcontain">
-						<label for="basic">Nome:</label>
-						<input type="text" name="name" id="basic" data-mini="true"required="required" name="text" pattern="[a-z\s]+$" />
-						<br/>
-						<label for="name">Email:</label>
-						<input type="email" data-clear-btn="false" name="email" id="email" value="" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-						
-						
-						<br/>
-						<label for="name">Mensagem:</label>
-						<textarea type="text" name="textarea-1" id="textarea-1" value="" required="required" /></textarea>
-						<BR/>
-						<button class="ui-btn ui-btn-inline">Enviar</button>
-					
-					</div>
-				</div>	
+			  </ul>
 			</div>
-		
-		</form>
-		<div dat-role="footer" class="rodape">	
-			<a href="https://www.facebook.com/Adbelemnoradio" rel="external" data-ajax="false" class="facebook-color share-button-regular"></i><h3>Facebook</h3></a>
-			<a href="https://twitter.com/adbelemnoradio" rel="external" data-ajax="false" class="twitter-color share-button-regular no-bottom"></i><h3>Twitter</h3></a>
-			<a href="#contato" rel="external" data-ajax="false" class="contato-color share-button-regular no-bottom"></i><h3>Contato</h3></a>
-			
+			<div class="landing-wrapper paginamenu">			
+				<ol data-role="listview" data-theme="b">
+				  
+				  <li><a href="#site" data-ajax="false">Acesse nosso site</a></li>
+				  <li data-theme="a"><a href="mailto:adbelemnoar@gmail.com">Peça sua música</a></li>
+				  <li><a href="mailto:adbelemnoar@gmail.com">Envie um e-mail</a></li>
+				</ol>
+				<br>
+			</div>		
 		</div>
+		
 	</div>
 	
+	<!--fim contato-->
 	
-	
-	
-	
-	<div data-role="page" id="quesomos">		
-		<div data-role="header"style="overflow:hidden;" >
-			<select name="select-choice-11" id="select-choice-11" data-theme="a" data-icon="gear" data-inline="true" data-native-menu="false" tabindex="-1">
-				
-				<option value="delete"> <a href="#pag1" rel="external" data-ajax="false" class="contato-color share-button-regular no-bottom"></i><h3>Home</h3></a></option>
-				<option value="edit">Quem Somos</option>
-			</select>			
+	<!-- SITE IFRAME -->
+	<div data-role="page" class="all-elements" id="site">
+		<div data-role="header"style="background-color: #e9e9e9;" class="topo" >
+			 <h1>Igreja Assembléia de Deus</h1>		
 		</div>
-		
-		<form action="form.php" method="post"> 
-			
-			<div id="home" role="main" class="ui-content landing-page">
-				<img class="landing-logo" src="images/logo.png" alt="img">
+		<div data-role="footer" style="overflow:hidden;"  class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#pag1" data-theme="a">NO AR</a></li>
+				<li><a href="#social" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
 				
-				<div data-role="fieldcontain"  class="fieldcontain">		
-					<div data-role="fieldcontain">
-						<label for="basic">Nome:</label>
-						<input type="text" name="name" id="basic" data-mini="true"required="required" name="text" pattern="[a-z\s]+$" />
-						<br/>
-						<label for="name">Email:</label>
-						<input type="email" data-clear-btn="false" name="email" id="email" value="" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-						
-						
-						<br/>
-						<label for="name">Mensagem:</label>
-						<textarea type="text" name="textarea-1" id="textarea-1" value="" required="required" /></textarea>
-						<BR/>
-						<button class="ui-btn ui-btn-inline">Enviar</button>
-					
-					</div>
-				</div>	
+			  </ul>
 			</div>
-		
-		</form>
-		<div dat-role="footer" class="rodape">	
-			<a href="https://www.facebook.com/Adbelemnoradio" rel="external" data-ajax="false" class="facebook-color share-button-regular"></i><h3>Facebook</h3></a>
-			<a href="https://twitter.com/adbelemnoradio" rel="external" data-ajax="false" class="twitter-color share-button-regular no-bottom"></i><h3>Twitter</h3></a>
-			<a href="#pag1" rel="external" data-ajax="false" class="contato-color share-button-regular no-bottom"></i><h3>Contato</h3></a>
-			
+			<div id="home" role="main" class="ui-content landing-page">
+				<div class="landing-wrapper">
+					 <iframe width="100%" height="100%" src="http://www.ieadsp.com.br/"></iframe>
+				</div>
+			</div>
 		</div>
 	</div>
+			
+			 
+			
+	<!--FIM SITE IFRAME -->
+	<!-- inicio sociais -->
 	
 	
+	<div data-role="page" class="all-elements" id="social">
+		<div data-role="header"style="background-color: #e9e9e9;" class="topo" >
+			 <h1>Igreja Assembléia de Deus</h1>		
+		</div>
+		<div data-role="footer" style="overflow:hidden;"  class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#pag1" data-theme="a">NO AR</a></li>
+				<li><a href="#social" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
+				
+			  </ul>
+			</div>
+			<div class="landing-wrapper paginamenu">			
+				<ol data-role="listview" data-theme="b">
+				  <li><a href="http://www.facebook.com/Adbelemnoradio" alt="blank">Facebook</a></li>
+				  <li><a href="https://twitter.com/adbelemnoradio"alt="blank" data-ajax="false">Twitter</a></li>
+				  
+				</ol>
+				<br>
+			</div>		
+		</div>
 		
+	</div>
 	
+	<!--fim sociais-->
+	<!-- iframe facebook -->
+	
+	<!-- facebook IFRAME -->
+	<div data-role="page" class="all-elements" id="facebook">
+		<div data-role="header"style="background-color: #e9e9e9;" class="topo" >
+			 <h1>Igreja Assembléia de Deus</h1>		
+		</div>
+		<div data-role="footer" style="overflow:hidden;"  class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#pag1" data-theme="a">NO AR</a></li>
+				<li><a href="#" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
+				
+			  </ul>
+			</div>
+			<div id="home" role="main" class="ui-content landing-page">
+				<div class="landing-wrapper">
+					 <iframe width="100%" height="100%" src="http://www.facebook.com/Adbelemnoradio"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+			 
+			
+	<!--FIM SITE IFRAME facebook -->
+	
+	
+	<!-- inicio frame twitter-->
+	<!-- facebook IFRAME -->
+	<div data-role="page" class="all-elements" id="twitter">
+		<div data-role="header"style="background-color: #e9e9e9;" class="topo" >
+			 <h1>Igreja Assembléia de Deus</h1>		
+		</div>
+		<div data-role="footer" style="overflow:hidden;"  class="footer">
+			<div data-role="navbar">
+			  <ul>
+				<li><a href="#pag1" data-theme="a">NO AR</a></li>
+				<li><a href="#" >SOCIAL</a></li>
+				<li><a href="#contato" >CONTATO</a></li>
+				
+			  </ul>
+			</div>
+			<div id="home" role="main" class="ui-content landing-page">
+				<div class="landing-wrapper">
+					 <iframe width="100%" height="100%" src="http://twitter.com/adbelemnoradio"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+			 
+			
+	<!--FIM SITE IFRAME -->
+	
+	<!-- fim frame twitter>
+	
+	
+	
+
 </body>
 	
